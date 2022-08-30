@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661791914654' stop='1661791914761'>
+    <name>Dynamic Loading Page</name>
+    <title>Dynamic Loading Page</title>
+    <test-cases>
+        <test-case start='1661791914655' status='failed' stop='1661791914761'>
+            <name>Wait for the hidden element to show</name>
+            <title>Wait for the hidden element to show</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.102'/>
+            </parameters>
+            <steps>
+                <step start='1661791914661' status='failed' stop='1661791914760'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d0110693-271a-4f76-97de-75ffb1802999-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1661791914666' status='failed' stop='1661791914760'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='17ebc05f-77f3-4359-a125-99c786bee0a5-attachment.json' type='application/json' size='53'/>
+                            </attachments>
+                            <steps>
+                                <step start='1661791914670' status='failed' stop='1661791914760'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments/>
+                                    <steps>
+                                        <step start='1661791914674' status='passed' stop='1661791914759'>
+                                            <name>POST /session/:sessionId/url</name>
+                                            <title>POST /session/:sessionId/url</title>
+                                            <attachments>
+                                                <attachment title='Request' source='03c0b105-b69d-4fc5-9342-5f88a92dee9a-attachment.json' type='application/json' size='67'/>
+                                                <attachment title='Screenshot' source='da358758-964f-4b3b-b3a1-fcaac1451ba8-attachment.png' type='image/png' size='3539'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Hello World!"
+                Received: {}</message>
+                <stack-trace>Error: expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Hello World!"
+                Received: {}
+                    at Context.&lt;anonymous> (C:\Users\Administrator\Desktop\TestAuto\wdio-v7\test\specs\dynamic-loading.e2e.js:12:38)
+                    at Context.executeAsync (C:\Users\Administrator\Desktop\TestAuto\wdio-v7\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (C:\Users\Administrator\Desktop\TestAuto\wdio-v7\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
